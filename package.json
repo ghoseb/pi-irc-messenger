@@ -1,0 +1,57 @@
+{
+  "name": "pi-irc-messenger",
+  "version": "0.1.0",
+  "description": "IRC messenger extension for pi-coding-agent - enables multi-agent IRC communication with profile management",
+  "type": "module",
+  "keywords": ["pi-package", "pi-extension", "irc"],
+  "author": "Baishampayan Ghose <b.ghose@gnu.org>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghoseb/pi-irc-messenger.git"
+  },
+  "homepage": "https://github.com/ghoseb/pi-irc-messenger#readme",
+  "bugs": {
+    "url": "https://github.com/ghoseb/pi-irc-messenger/issues"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "docs/**/*",
+    "config.example.json",
+    "README.md",
+    "dev1_AGENTS.md"
+  ],
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "check": "tsc && eslint src/**/*.ts && prettier --check \"src/**/*.ts\"",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "^0.52.8",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.5.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/node": "^25.2.2",
+    "irc-framework": "^4.14.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

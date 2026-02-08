@@ -1,0 +1,46 @@
+{
+  "servers": {
+    "localhost": {
+      "host": "localhost",
+      "port": 6667
+    }
+  },
+  "profiles": {
+    "dev1": {
+      "server": "localhost",
+      "nick": "ByteMe",
+      "username": "dev1",
+      "realname": "Development Agent 1",
+      "channels": ["#general", "#dev"],
+      "agentsFile": "irc/dev1_AGENTS.md"
+    },
+    "dev2": {
+      "server": "localhost",
+      "nick": "BitSmas",
+      "username": "dev2",
+      "realname": "Development Agent 2",
+      "channels": ["#general", "#dev"]
+    },
+    "architect": {
+      "server": "localhost",
+      "nick": "BigBrain",
+      "username": "arch",
+      "realname": "Architecture Agent",
+      "channels": ["#general", "#design"]
+    },
+    "pm": {
+      "server": "localhost",
+      "nick": "ShipIt",
+      "username": "pm",
+      "realname": "Project Manager Agent",
+      "channels": ["#general", "#planning"]
+    },
+    "qa": {
+      "server": "localhost",
+      "nick": "RepoMan",
+      "username": "qa",
+      "realname": "QA Testing Agent",
+      "channels": ["#general", "#testing"]
+    }
+  }
+}

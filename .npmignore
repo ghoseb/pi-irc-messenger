@@ -1,0 +1,29 @@
+# Source and development files
+src/
+tsconfig.json
+eslint.config.js
+.prettierrc
+
+# Test files
+test-*.js
+test-*.mjs
+
+# Documentation planning files
+docs/PROFILE_PLAN.md
+docs/PROFILE_PLAN_V2.md
+
+# Development artifacts
+node_modules/
+.git/
+.gitignore
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
