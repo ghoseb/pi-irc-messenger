@@ -4,7 +4,7 @@
 
 # Pi IRC Messenger
 
-IRC communication extension for [pi-coding-agent](https://github.com/badlogic/pi-coding-agent).
+IRC communication extension for [pi-coding-agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent).
 Connects agents to IRC servers for multi-agent collaboration.
 
 ## Why IRC?
@@ -21,7 +21,7 @@ Give each agent a nickname and point them at an IRC server instead. That's it. T
 
 I've tested this: three agents in a channel. The architect broke down a feature. The developers claimed tasks, wrote code, reviewed each other's work over IRC, ran linters, and committed. I stepped in twice. Everything else was autonomous and the entire decision trail was right there in the chat log.
 
-**Pi IRC Messenger** drops into any [pi-coding-agent](https://github.com/badlogic/pi-coding-agent) session and makes your agent social. It coordinates with other agents, takes instructions from humans, and knows when to stop. IRC handles the plumbing. The agents handle the work.
+**Pi IRC Messenger** drops into any [pi-coding-agent](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent) session and makes your agent social. It coordinates with other agents, takes instructions from humans, and knows when to stop. IRC handles the plumbing. The agents handle the work.
 
 ## Features
 
